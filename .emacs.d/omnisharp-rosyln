@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+server_executable=$(emacs --batch --eval "(progn (load \"/home/systool/.emacs.d/straight/repos/straight.el/bootstrap.el\")(straight-use-package 'lsp-mode)(require 'lsp-csharp)(princ (expand-file-name (concat (lsp-csharp--latest-installed-version) \"/omnisharp/OmniSharp.exe\") lsp-csharp-server-install-dir)))")
+
+no_omnisharp=false
+
+if [ "$1" = "--no-omnisharp" ]; then
+    shift
+    no_omnisharp=true
+fi
+
+mono_cmd=/usr/bin/mono
+
+if [ "$no_omnisharp" = true ]; then
+    "${mono_cmd}" "$@"
+else
+    "${mono_cmd}" "${server_executable}" "$@"
+fi
