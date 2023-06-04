@@ -100,16 +100,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source $ZSH/custom/zinit/zinit.zsh
-zinit light zsh-users/zsh-syntax-highlighting
-zinit light zsh-users/zsh-autosuggestions
-alias dotgit="git --git-dir=$HOME/.dotgit --work-tree=$HOME"
+export EDITOR=$(which nvim)
 alias ls='lsd'
 alias cat='bat'
 alias grep='rg'
-alias youtube-dl='yt-dlp'
-alias sudoedit='doasedit'
-if [ "$TERM" = xterm-kitty ]; then
-	alias ssh='kitty +kitten ssh'
-fi
-### End of Zinit's installer chunk
+alias dotgit="git --git-dir=$HOME/.dotgit --work-tree=$HOME"
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
