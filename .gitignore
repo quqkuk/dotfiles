@@ -17,3 +17,7 @@
 !/.config/nvim/*.vim
 !/.config/rustfmt/
 !/.config/paru/
+!/.config/hypr
+!/.config/swaylock
+!/.config/tofi
+!/.config/waybar

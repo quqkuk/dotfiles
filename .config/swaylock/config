@@ -1,0 +1,10 @@
+ignore-empty-password
+show-failed-attempts
+grace=3
+indicator
+clock
+screenshots
+indicator-caps-lock
+scaling=fill
+indicator-idle-visible
+effect-blur=50x3
