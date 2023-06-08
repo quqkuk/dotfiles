@@ -1,6 +1,6 @@
 {
     "layer": "top", // Waybar at top layer
-    "output": [ "HDMI-A-2" ],
+    "output": [ "HDMI-A-1" ],
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 25, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
