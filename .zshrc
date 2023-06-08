@@ -105,6 +105,7 @@ alias ls='lsd'
 alias cat='bat'
 alias grep='rg'
 alias dotgit="git --git-dir=$HOME/.dotgit --work-tree=$HOME"
+alias sudo='doas'
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
