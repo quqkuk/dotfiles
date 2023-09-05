@@ -10,12 +10,14 @@
 #bind = , R, submap, reset
 #bind = , Escape, submap, reset
 set -o errexit
-TOFI_MENU='Power Off
+CHOSEN_COMMAND=$(tofi <<EOF
+Power Off
 Reboot
 Suspend
 Exit Hyprland
-Reload Hyprland Config'
-CHOSEN_COMMAND=$(tofi <<<"$TOFI_MENU")
+Reload Hyprland Config
+EOF
+)
 LOGINCTL="/usr/bin/loginctl"
 HYPRCTL="/usr/bin/hyprctl"
 case "$CHOSEN_COMMAND" in
