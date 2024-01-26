@@ -103,7 +103,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=$(which nvim)
 alias ls='lsd'
 alias cat='bat'
-alias grep='rg'
+alias grep='rga'
 alias dotgit="git --git-dir=$HOME/.dotgit --work-tree=$HOME"
 alias sudo='doas'
 alias ssh='kitty +kitten ssh'
